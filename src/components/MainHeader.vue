@@ -1,7 +1,12 @@
 <template>
-    <h1>
-        hi
-    </h1>
+    <header>
+        <div class="container">
+            <img src="../assets/cds-messenger.gif" />
+            <h2>
+                Customers aren't the only ones that need support.
+            </h2>
+        </div>
+    </header>
 </template>
 
 <script>
@@ -9,3 +14,29 @@ export default {
     name: 'MainHeader'
 }
 </script>
+
+<style scoped>
+
+    header {
+        background-color: rgb(207, 33, 33);
+        margin: 10vh auto;
+        width: 75vw;
+        color: rgb(248, 248, 248);
+        border-radius: .5em;
+    }
+
+    header h2 {
+        margin: 25vh auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    .container img {
+        border-radius: .5em;
+    }
+</style>

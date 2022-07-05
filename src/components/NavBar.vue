@@ -31,9 +31,11 @@ export default {
 
 <style scoped>
 nav {
-    margin: 0 auto;
+    position: fixed;
+    top: 1.5%;
+    left: 12.5%;
     width: 75vw;
-    background-color: rgba(202, 202, 202, 0.15);
+    background-color: rgba(223, 223, 223, 0.342);
     backdrop-filter: blur(5px);
     font-size: .85em;
     font-weight: 600;
