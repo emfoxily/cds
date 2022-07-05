@@ -35,13 +35,15 @@ nav {
     top: 1.5%;
     left: 12.5%;
     width: 75vw;
-    background-color: rgba(223, 223, 223, 0.342);
+    /* background-image: radial-gradient(farthest-corner at 40px 40px, */
+      /* rgba(223, 223, 223, 0.342) 0%, rgba(218, 218, 218, 0.103) 100%); */
+    background-color: rgba(223, 223, 223, 0.747);
     backdrop-filter: blur(5px);
     font-size: .85em;
     font-weight: 600;
     color: rgb(207, 33, 33);
     text-transform: uppercase;
-    padding: .2em;
+    /* padding: .2em; */
     border-radius: .8em;
 }
 
