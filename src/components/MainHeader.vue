@@ -21,7 +21,7 @@ export default {
         /* background-color: rgb(207, 33, 33); */
         background-image: radial-gradient(farthest-corner at 40px 40px,
       rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
-        margin: 10vh auto;
+        margin: 8vh auto;
         width: 75vw;
         color: rgb(248, 248, 248);
         border-radius: .5em;

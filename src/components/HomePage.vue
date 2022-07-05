@@ -2,9 +2,14 @@
   <div class="container">
     <MainHeader />
     <div class="account">
-      <h3>
-        Welcome, Benjamin!
-      </h3>
+      <div class="header">
+        <h3>
+          Welcome, <b>Benjamin</b>!
+        </h3>
+        <h4>
+          Logout
+        </h4>
+      </div>
       <ChatBox />
     </div>
   </div>
@@ -33,7 +38,18 @@ export default {
   .account {
     background-color: rgb(255, 255, 255);
     padding: 5em;
-    margin: -8vh auto;
+    margin: -7vh auto;
+    border-radius: .5em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header h3 {
+    font-size: 1.5em;
+    font-weight: normal;
   }
 
 </style>

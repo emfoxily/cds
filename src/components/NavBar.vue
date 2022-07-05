@@ -32,7 +32,7 @@ export default {
 <style scoped>
 nav {
     position: fixed;
-    top: 1.5%;
+    top: .5%;
     left: 12.5%;
     width: 74.4vw;
     /* background-image: radial-gradient(farthest-corner at 40px 40px, */
