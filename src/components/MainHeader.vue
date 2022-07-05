@@ -35,10 +35,11 @@ export default {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 2em;
+        padding: 4em 8em;
     }
 
     .container img {
         border-radius: .5em;
+        filter: drop-shadow(10px 10px 8px rgb(119, 23, 23));
     }
 </style>

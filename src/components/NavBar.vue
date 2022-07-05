@@ -34,7 +34,7 @@ nav {
     position: fixed;
     top: 1.5%;
     left: 12.5%;
-    width: 75vw;
+    width: 74.4vw;
     /* background-image: radial-gradient(farthest-corner at 40px 40px, */
       /* rgba(223, 223, 223, 0.342) 0%, rgba(218, 218, 218, 0.103) 100%); */
     background-color: rgba(223, 223, 223, 0.747);
@@ -45,6 +45,7 @@ nav {
     text-transform: uppercase;
     /* padding: .2em; */
     border-radius: .8em;
+    z-index: 1;
 }
 
 nav img {

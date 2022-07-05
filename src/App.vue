@@ -22,6 +22,7 @@ export default {
 
 body {
   background-image: url('./assets/bg.webp');
+  background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
 }
 </style>
