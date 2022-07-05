@@ -18,7 +18,9 @@ export default {
 <style scoped>
 
     header {
-        background-color: rgb(207, 33, 33);
+        /* background-color: rgb(207, 33, 33); */
+        background-image: radial-gradient(farthest-corner at 40px 40px,
+      rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
         margin: 10vh auto;
         width: 75vw;
         color: rgb(248, 248, 248);
