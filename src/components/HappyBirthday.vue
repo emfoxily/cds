@@ -1,0 +1,50 @@
+<template>
+    <div class="container">
+      <div class="birthday">
+        <h2>Happy Birthday, Ben!</h2>
+        <span>
+          From Emily, Sofi, Mima, and Paula
+        </span>
+      </div>
+      <div class="video-player">
+        video here
+      </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'HappyBirthday'
+}
+</script>
+
+<style scoped>
+.container {
+  background-image: radial-gradient(farthest-corner at 40px 40px,
+      rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
+  /* margin: 10vh auto; */
+  border-radius: .5em;
+  height: 77vh;
+  border: .1em solid rgb(207, 33, 33);
+  filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404));
+}
+
+.birthday {
+  padding: 5em;
+  text-align: center;
+  color: white;
+}
+
+.birthday h2 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.video-player {
+  background-color: black;
+  width: 720px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+</style>

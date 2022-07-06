@@ -55,19 +55,22 @@
         </ul>
       </div>
     </div>
+    <HappyBirthday />
   </div>
 </template>
 
 <script>
 import MainHeader from './MainHeader.vue'
 import ChatBox from './ChatBox.vue'
+import HappyBirthday from './HappyBirthday.vue'
 
 export default {
   name: 'HomePage',
   components: {
     MainHeader,
-    ChatBox
-  }
+    ChatBox,
+    HappyBirthday
+}
 }
 </script>
 
@@ -75,6 +78,7 @@ export default {
 
   .container {
     margin: 0 auto;
+    margin-bottom: 10vh;
     width: 75vw;
   }
 
@@ -87,6 +91,7 @@ export default {
     border: .1em solid rgb(223, 223, 223);
     border-radius: .5em;
     /* filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404)); */
+    margin-bottom: 2vh;
   }
 
   .header {

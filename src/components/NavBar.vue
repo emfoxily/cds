@@ -42,7 +42,7 @@ nav {
     position: fixed;
     top: .5%;
     left: 12.5%;
-    width: 74.4vw;
+    width: 74.25vw;
     /* background-image: radial-gradient(farthest-corner at 40px 40px, */
       /* rgba(223, 223, 223, 0.342) 0%, rgba(218, 218, 218, 0.103) 100%); */
     background-color: rgba(197, 197, 197, 0.747);
