@@ -54,6 +54,7 @@ nav {
     /* padding: .2em; */
     border-radius: .8em;
     z-index: 1;
+    border: .1em solid rgba(173, 173, 173, 0.281);
 }
 
 nav img {

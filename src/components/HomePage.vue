@@ -34,6 +34,26 @@
           <ChatBox />
         </div>
       </div>
+      <div class="account-management">
+        <h3>
+          Manage your Account
+        </h3>
+        <br />
+        <ul>
+          <li>
+            Update Name
+          </li>
+          <li>
+            Change Password
+          </li>
+          <li>
+            Privacy Policy
+          </li>
+          <li>
+            Delete Account
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -64,7 +84,9 @@ export default {
     backdrop-filter: blur(5px);
     padding: 5em;
     margin: -7vh auto;
+    border: .1em solid rgb(223, 223, 223);
     border-radius: .5em;
+    /* filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404)); */
   }
 
   .header {
@@ -84,6 +106,11 @@ export default {
     cursor: pointer;
   }
 
+  .header h4:hover {
+    color: rgb(207, 33, 33);
+    transition: .5s;
+  }
+
   .message {
     padding: 1em;
   }
@@ -95,6 +122,7 @@ export default {
   }
 
   table {
+    margin-top: 6vh;
     width: 90%;
     /* border: .1em solid black; */
     table-layout: fixed;
@@ -106,11 +134,37 @@ export default {
     display: table;
     background-color: rgb(207, 33, 33);
     width: 97.6%;
-    /* position: fixed; */
     text-align: center;
     color: white;
     border-radius: .5em .5em 0 0;
     padding: .5em;
+  }
+
+  thead th {
+    font-weight: 400;
+  }
+
+  .account-management {
+    margin-top: -15vh;
+    border-top: .1em solid rgba(51, 51, 51, 0.116);
+    width: 34vw;
+    padding: 2em;
+  }
+
+  .account-management h3 {
+    text-decoration: underline;
+  }
+
+  .account-management ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    color: rgb(207, 33, 33);
+  }
+
+  .account-management li {
+    cursor: pointer;
   }
 
 </style>

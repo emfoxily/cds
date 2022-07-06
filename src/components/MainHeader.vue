@@ -21,10 +21,12 @@ export default {
         /* background-color: rgb(207, 33, 33); */
         background-image: radial-gradient(farthest-corner at 40px 40px,
       rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
-        margin: 8vh auto;
+        margin: 9vh auto;
         width: 75vw;
         color: rgb(248, 248, 248);
+        border: .1em solid rgb(207, 33, 33);
         border-radius: .5em;
+        filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404));
     }
 
     header h2 {
