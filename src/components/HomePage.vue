@@ -14,10 +14,17 @@
         <div>
           <table>
             <thead>
-              <tr>
-                <td>this is a table</td>
-              </tr>
+              <th>
+                Your statistics as of: <b>July 24, 2022</b>
+              </th>
             </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="../assets/line-graph.png" />
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div class="karen-container">
@@ -64,13 +71,17 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3em;
-    border-bottom: .1em solid black;
+    border-bottom: .1em solid rgba(51, 51, 51, 0.116);
     padding: 0 0 1.5em 0;
   }
 
   .header h3 {
     font-size: 1.5em;
     font-weight: normal;
+  }
+
+  .header h4 {
+    cursor: pointer;
   }
 
   .message {
@@ -81,6 +92,25 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 0 2em;
+  }
+
+  table {
+    width: 90%;
+    /* border: .1em solid black; */
+    table-layout: fixed;
+    border-radius: .5em;
+    background-color: rgb(255, 255, 255);
+  }
+
+  table thead {
+    display: table;
+    background-color: rgb(207, 33, 33);
+    width: 97.6%;
+    /* position: fixed; */
+    text-align: center;
+    color: white;
+    border-radius: .5em .5em 0 0;
+    padding: .5em;
   }
 
 </style>

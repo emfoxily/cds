@@ -3,10 +3,14 @@
         <ul>
             
             <li>
-                Home
+                <span>
+                    Home
+                </span>
             </li>
             <li>
-                What We Do
+                <span>
+                    What We Do
+                </span>
             </li>
 
             <li>
@@ -14,10 +18,14 @@
             </li>
 
             <li>
-                Our Team
+                <span>
+                    Our Team
+                </span>
             </li>
             <li>
-                Contact Us
+                <span>
+                    Contact Us
+                </span>
             </li>
         </ul>
     </nav>
@@ -65,5 +73,9 @@ nav li {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+nav span {
+    cursor: pointer;
 }
 </style>

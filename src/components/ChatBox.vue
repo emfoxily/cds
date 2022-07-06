@@ -1,7 +1,10 @@
 <template>
     <section class="chat-box">
         <div class="chat-name">
-            Chat with <b>Karen</b>
+            <img src="../assets/karen.png" />
+            <p>
+                Chat with <b>Karen</b>
+            </p>
         </div>
         <div id="chat-box" class="chat-box-list-container">
             <ul class="chat-box-list">
@@ -120,7 +123,7 @@ export default {
                     return this.karens[i]
                 } else {
                     this.$scrolled = true;
-                    this.updateScroll();
+                    setInterval(this.updateScroll, 1000);
                     break;
                 }
             }
@@ -136,9 +139,16 @@ export default {
 <style scoped lang="scss">
 
 .chat-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(233, 233, 233);
     padding: 2em;
     border-radius: .5em .5em 0 0;
+}
+
+.chat-name img {
+    width: 3vw;
 }
 
 .chat-box {
