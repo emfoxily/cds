@@ -47,4 +47,16 @@ export default {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px) {
+
+.container {
+  width: 100%!important;
+}
+
+.video-player {
+  width: 90%;
+}
+
+}
+
 </style>

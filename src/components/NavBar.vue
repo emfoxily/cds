@@ -79,4 +79,19 @@ nav li {
 nav span {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 1000px) {
+
+    nav {
+        font-size: .8em;
+        width: 75.15%;
+    }
+
+    nav img {
+        width: 90%;
+    }
+
+}
+
 </style>

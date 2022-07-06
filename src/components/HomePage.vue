@@ -59,6 +59,15 @@
   </div>
 </template>
 
+<script setup>
+
+  // import { useMq } from "vue3-mq"
+  import { inject, onMounted } from "vue";
+
+  // const mq = useMq()
+
+</script>
+
 <script>
 import MainHeader from './MainHeader.vue'
 import ChatBox from './ChatBox.vue'
@@ -70,12 +79,36 @@ export default {
     MainHeader,
     ChatBox,
     HappyBirthday
-}
+  },
+  inject: ["mq"],
+  computed: {
+    displayText() {
+      return this.mq.current === 'mobile' ? 'I am small' : 'I am large'
+    }
+  },
+  template: `
+    {{ displayText }}
+  `,
+  methods: {
+    setup() {
+    const updateBreakpoints = inject("updateBreakpoints");
+
+      onMounted(() => {
+        updateBreakpoints({
+            mobile: 450,
+            tablet: 900,
+            laptop: 1250,
+            desktop: Infinity
+          })
+      })
+    }
+  }
 }
 </script>
 
 <style scoped>
 
+@media only screen and (max-width: 1920px) {
   .container {
     margin: 0 auto;
     margin-bottom: 10vh;
@@ -171,5 +204,52 @@ export default {
   .account-management li {
     cursor: pointer;
   }
+}
+
+  @media only screen and (max-width: 1000px) {
+
+      .container {
+        margin-top: 10vh;
+        /* width: 78.5%; */
+      }
+
+      .account{
+        margin-top: -5vh;
+        margin-left: .4vw
+      }
+      .account-wrapper {
+        flex-direction: column;
+        margin-top: -5vh;
+        width: 100%;
+      }
+      .account img {
+          width: 55vw;
+      }
+
+      table {
+        width: 100%;
+        padding: .25em;
+        margin-left: -3.4vw;
+      }
+
+      thead {
+        width: 97.15%!important;
+      }
+
+      .account-management {
+        margin: 10vh auto 0;
+        width: 90%;
+        font-size: .8em!important;
+      }
+
+      .karen-container {
+        margin-top: 5vh;
+      }
+
+      .message {
+        text-align: center;
+        margin-left: -8vw;
+      }
+    }
 
 </style>

@@ -44,4 +44,31 @@ export default {
         border-radius: .5em;
         filter: drop-shadow(10px 10px 8px rgb(119, 23, 23));
     }
+
+    @media only screen and (max-width: 1000px) {
+        header {
+            width: 75vw;
+            margin: 7vh auto;
+        }
+        
+        header h2 {
+            font-size: 1em;
+            margin: 4vh auto;
+        }
+
+        .container {
+            width: 60vw;
+            padding: 2em 4.5em;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .container img {
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+            margin-bottom: 5vh;
+        }
+    }
+
 </style>

@@ -246,5 +246,49 @@ button:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .chat-box {
+       width: 97%!important;
+       height: auto;
+       margin-left: -3.5vw;
+    }
+
+    .chat-box-list-container {
+        height: 50vh;
+    }
+
+    .chat-name img {
+        width: 20%;
+    }
+
+    .chat-box-list {
+        .sender {
+        font-size: 11px;
+        margin-bottom: -1em;
+        color: rgb(90, 90, 90)
+        }
+
+         p {
+            padding: .8em;
+            border-radius: .5em;
+            margin-right: 3em;
+            font-size: .85em;
+        }
+
+        .Karen, .Ben {
+            p {
+                width: 25vw;
+            }
+
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+
+    }
+
 
 </style>
