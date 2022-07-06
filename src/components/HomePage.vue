@@ -12,7 +12,13 @@
       </div>
       <div class="account-wrapper">
         <div>
-          this is a placeholder
+          <table>
+            <thead>
+              <tr>
+                <td>this is a table</td>
+              </tr>
+            </thead>
+          </table>
         </div>
         <div class="karen-container">
           <div class="message">
