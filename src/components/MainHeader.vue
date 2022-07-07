@@ -124,7 +124,7 @@ export default {
         header {
             width: 90vw;
             margin: 0 auto;
-            height: 65vh;
+            height: 70vh;
         }
         
         header h2 {

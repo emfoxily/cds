@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <MainHeader />
+    <MainHeader class="plswork" />
     <div class="account">
       <div class="header">
         <h3>
@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
  .container {
-    margin: 16vh auto!important;
+    margin: 20vh auto!important;
   }
 
   .account {

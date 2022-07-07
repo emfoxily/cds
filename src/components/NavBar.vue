@@ -115,7 +115,7 @@ nav span {
 
     nav {
         position:fixed;
-        margin: -13vh 5%;
+        margin: -17vh 5%;
         font-size: 1em;
         width: 88vw;
     }
