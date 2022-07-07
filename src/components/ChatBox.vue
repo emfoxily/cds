@@ -331,9 +331,9 @@ button:hover {
 
     .chat-box-list {
         .sender {
-        font-size: 11px;
-        margin-bottom: -1em;
-        color: rgb(90, 90, 90)
+            font-size: 11px;
+            margin-bottom: -1em;
+            color: rgb(90, 90, 90)
         }
 
          p {
@@ -354,6 +354,40 @@ button:hover {
     input {
         width: 100%;
     }
+
+    }
+
+    @media only screen and (max-width: 415px) {
+         .chat-box {
+            width: 76vw!important;
+            height: auto;
+            margin-left: -15vw!important;
+            font-size: .8em!important;
+        }
+
+        .chat-box-list-container {
+            overflow-x: hidden!important;
+        }
+
+        .Karen, .Ben {
+            p {
+                width: 50vw!important;
+            }
+
+        }
+
+        .Karen {
+            margin-left: -2em!important;
+        }
+
+        .Ben {
+
+            margin-right: -1.85em!important;
+
+            .sender {
+                margin-left: 2em!important;
+            }
+        }
 
     }
 

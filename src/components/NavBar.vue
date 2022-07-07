@@ -80,16 +80,26 @@ nav span {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 415px) {
+    nav {
+        color: transparent!important
+    }
+}
+
 
 @media only screen and (max-width: 1000px) {
 
     nav {
+        position:absolute;
         font-size: .8em;
-        width: 75.15%;
+        width: 80vw;
+        top: 0%!important;
+        left: 0!important;
+        margin: 2% 8% auto!important;
     }
 
     nav img {
-        width: 90%;
+        width: 200%;
     }
 
 }

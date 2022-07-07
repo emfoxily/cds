@@ -45,6 +45,23 @@ export default {
         filter: drop-shadow(10px 10px 8px rgb(119, 23, 23));
     }
 
+    @media only screen and (max-width: 415px) {
+        header {
+            width: 100%!important;
+        }
+
+        header h2 {
+            margin-left: -2.5vw!important;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container img {
+            margin: 0 -10vw auto!important;
+            width: 125%!important;
+        }
+    }
+
     @media only screen and (max-width: 1000px) {
         header {
             width: 75vw;

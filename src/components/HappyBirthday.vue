@@ -49,14 +49,25 @@ export default {
 
 @media only screen and (max-width: 1000px) {
 
-.container {
-  width: 100%!important;
+  .container {
+    width: 100%!important;
+  }
+
+  .video-player {
+    width: 90%;
+  }
+
 }
 
-.video-player {
-  width: 90%;
-}
+@media only screen and (max-width: 415px) {
+  .container {
+    margin: -20vh auto!important;
+  }
 
+  .video-player {
+    width: 90%!important;
+    height: 30%!important;
+  }
 }
 
 </style>

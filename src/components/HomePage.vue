@@ -252,4 +252,40 @@ export default {
       }
     }
 
+  @media only screen and (max-width: 415px) {
+
+    .container {
+      margin-top: 12vh!important;
+      width: 90vw!important;
+    }
+
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    table {
+      width: 85.8vw;
+      margin-left: -18vw;
+    }
+
+    table img {
+      width: 102%!important;
+    }
+
+    thead {
+      width: 95%!important;
+    }
+
+    .account-wrapper {
+      width: 100%!important;
+      padding: 0;
+    }
+
+    .account-management {
+      width: 73vw!important;
+      margin: 5vh auto -5vh -8vh!important;
+    }
+  }
+
 </style>
