@@ -91,7 +91,7 @@ nav span {
         position:fixed;
         margin: -11vh 4.8vw!important;
         font-size: 1em;
-        width: 87.5vw!important;
+        width: 88vw!important;
     }
     nav img {
         width: 70%;
