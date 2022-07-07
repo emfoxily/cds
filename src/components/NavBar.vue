@@ -71,13 +71,13 @@ nav span {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1367px) and (max-width: 1920px){
 
     nav {
         position:fixed;
-        margin: -13vh 5%!important;
-        font-size: 1em!important;
-        width: 88vw!important;
+        margin: -12.5vh 5%!important;
+        font-size: 1em;
+        width: 88.35vw!important;
     }
     nav img {
         width: 70%;
@@ -85,13 +85,13 @@ nav span {
 
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
 
     nav {
         position:fixed;
-        margin: -13vh 5%;
+        margin: -10vh 5%!important;
         font-size: 1em;
-        width: 87.5vw;
+        width: 87.5vw!important;
     }
     nav img {
         width: 70%;
