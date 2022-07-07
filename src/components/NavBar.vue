@@ -40,12 +40,7 @@ export default {
 <style scoped>
 nav {
     position: fixed;
-    top: .5%;
-    left: 12.5%;
-    width: 74.25vw;
-    /* background-image: radial-gradient(farthest-corner at 40px 40px, */
-      /* rgba(223, 223, 223, 0.342) 0%, rgba(218, 218, 218, 0.103) 100%); */
-    background-color: rgba(197, 197, 197, 0.747);
+    background-color: rgba(216, 216, 216, 0.418);
     backdrop-filter: blur(5px);
     font-size: .85em;
     font-weight: 600;
@@ -55,10 +50,6 @@ nav {
     border-radius: .8em;
     z-index: 1;
     border: .1em solid rgba(173, 173, 173, 0.281);
-}
-
-nav img {
-    width: 5.2vw;
 }
 
 nav ul {
@@ -107,15 +98,11 @@ nav span {
 @media only screen and (min-width: 1024px) {
 
     nav {
-        position:absolute;
-        /* margin: 0 auto!important; */
+        position:fixed;
+        margin: -7vh 5%;
         font-size: .8em;
-        width: 80vw;
-        /* top: 0%!important; */
-        /* left: 4.3%!important; */
-        margin: 1% -3.5%!important;
+        width: 86.5vw;
     }
-
     nav img {
         width: 70%;
     }

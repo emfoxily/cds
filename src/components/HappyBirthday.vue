@@ -22,9 +22,7 @@ export default {
 .container {
   background-image: radial-gradient(farthest-corner at 40px 40px,
       rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
-  /* margin: 10vh auto; */
   border-radius: .5em;
-  height: 77vh;
   border: .1em solid rgb(207, 33, 33);
   filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404));
 }
