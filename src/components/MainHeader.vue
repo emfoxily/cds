@@ -68,7 +68,7 @@ export default {
         header {
             width: 90vw;
             margin: -4vh 0 9vh auto;
-            height: 38vh;
+            height: 35vh!important;
         }
         
         header h2 {
@@ -124,12 +124,12 @@ export default {
         header {
             width: 90vw;
             margin: 0 auto;
-            height: 70vh;
+            height: 75vh;
         }
         
         header h2 {
             font-size: 2em;
-            margin: 18% auto;
+            margin: 20% auto;
             width: 55%;
         }
 
@@ -141,7 +141,7 @@ export default {
         }
 
         .container img {
-            width: 20vw;
+            width: 30%;
             height: 100%;
             margin: 4vh auto;
             margin-bottom: 5vh;
