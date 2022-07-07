@@ -73,33 +73,21 @@ nav span {
 
 @media only screen and (max-width: 415px) {
     nav {
-        color: transparent!important
-    }
-}
-
-
-@media only screen and (max-width: 1000px) {
-
-    nav {
-        position:absolute;
-        font-size: .8em;
+        color: transparent;
         width: 80vw;
-        top: 0%!important;
-        left: 0!important;
-        margin: 2% 8% auto!important;
+        margin: -11vh 6vw;
     }
 
     nav img {
-        width: 200%;
+        width: 30vw;
     }
-
 }
 
 @media only screen and (min-width: 1024px) {
 
     nav {
         position:fixed;
-        margin: -7vh 5%;
+        margin: -10vh 5%;
         font-size: .8em;
         width: 86.5vw;
     }

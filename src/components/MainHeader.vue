@@ -18,7 +18,6 @@ export default {
 <style scoped>
 
     header {
-        /* background-color: rgb(207, 33, 33); */
         background-image: radial-gradient(farthest-corner at 40px 40px,
       rgb(253, 91, 91) 0%, rgb(207, 33, 33) 100%);
         color: rgb(248, 248, 248);
@@ -31,7 +30,9 @@ export default {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 4em 8em;
+        /* padding: 4em 8em; */
+        /* margin: 0 auto!important; */
+        /* width: 100%!important; */
     }
 
     .container img {
@@ -41,44 +42,25 @@ export default {
 
     @media only screen and (max-width: 415px) {
         header {
-            width: 100%!important;
+            width: 100%;
+            height: 70vh!important;
         }
 
         header h2 {
-            margin-left: -2.5vw!important;
-            width: 100%;
+            margin:2vh auto!important;
+            width: 80%!important;
             text-align: center;
         }
 
-        .container img {
-            margin: 0 -10vw auto!important;
-            width: 125%!important;
-        }
-    }
-
-    @media only screen and (max-width: 1000px) {
-        header {
-            width: 75vw;
-            margin: 7vh auto;
-        }
-        
-        header h2 {
-            font-size: 1em;
-            margin: 4vh auto;
-        }
-
         .container {
-            width: 60vw;
-            padding: 2em 4.5em;
-            display: flex;
+            margin: 0 -16%;
             flex-direction: column-reverse;
+            /* width: 90%!important; */
         }
 
         .container img {
-            width: 50%;
-            height: 100%;
-            margin: 0 auto;
-            margin-bottom: 5vh;
+            margin: 1vh auto!important;
+            width: 75vw!important;
         }
     }
 
@@ -86,7 +68,7 @@ export default {
         header {
             width: 90vw;
             margin: -4vh 0 9vh auto;
-            height: 38vh!important;
+            height: 38vh;
         }
         
         header h2 {

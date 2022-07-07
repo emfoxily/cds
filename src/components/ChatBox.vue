@@ -198,7 +198,7 @@ export default {
                             })
                             this.surprise = []
                             clearInterval(this.scrollUpdate)
-                        }, 10000)
+                        }, 10500)
                         
                     }, 1500)
                 } else {
@@ -233,7 +233,7 @@ export default {
 
 .chat-box {
     border: .1em solid rgb(228, 228, 228);
-    width: 25vw!important;
+    width: 25vw;
     background-color: rgb(202, 202, 202);
     padding: .5em;
     border-radius: .5em;
@@ -272,7 +272,6 @@ export default {
         p {
             background-color: rgb(207, 33, 33);
             float: right;
-            width: 12vw;
         }
 
         span {
@@ -288,7 +287,6 @@ export default {
     .Karen {
         p {
             background-color: rgb(233, 233, 233);
-            width: 12vw;
             line-height: 2em;
             float: left;
         }
@@ -326,60 +324,16 @@ button:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
-
-    .chat-box {
-       width: 97%!important;
-       height: auto;
-       margin-left: -3.5vw;
-    }
-
-    .chat-box-list-container {
-        height: 50vh;
-    }
-
-    .chat-name img {
-        width: 20%;
-    }
-
-    .chat-box-list {
-        .sender {
-            font-size: 11px;
-            margin-bottom: -1em;
-            color: rgb(90, 90, 90)
-        }
-
-         p {
-            padding: .8em;
-            border-radius: .5em;
-            margin-right: 3em;
-            font-size: .85em;
-        }
-
-        .Karen, .Ben {
-            p {
-                width: 25vw;
-            }
-
-        }
-    }
-
-    input {
-        width: 100%;
-    }
-
-    }
-
     @media only screen and (max-width: 415px) {
          .chat-box {
-            width: 76vw!important;
+            width: 95.5%!important;
             height: auto;
-            margin-left: -15vw!important;
-            font-size: .8em!important;
+            // margin-left: -15vw;
+            font-size: .8em;
         }
 
         .chat-box-list-container {
-            overflow-x: hidden!important;
+            overflow-x: hidden;
         }
 
         .Karen, .Ben {
@@ -390,28 +344,28 @@ button:hover {
         }
 
         .Karen {
-            margin-left: -2em!important;
+            margin-left: -2em;
         }
 
         .Ben {
 
-            margin-right: -1.85em!important;
+            margin-right: -1.85em;
 
             .sender {
-                margin-left: 2em!important;
+                margin-left: 2em;
             }
         }
 
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
 
         .chat-box-list-container {
-            overflow-x: hidden!important;
+            overflow-x: hidden;
         }
 
         .chat-box {
-            width: 45vw!important;
+            width: 45vw;
             height: 50vh;
         }
 
@@ -425,21 +379,21 @@ button:hover {
 
         .Karen, .Ben {
             p {
-                width: 20vw!important;
+                width: 20vw;
             }
 
         }
 
         .Karen {
-            margin-left: -1.5em!important;
+            margin-left: -1.5em;
         }
 
         .Ben {
 
-            margin-right: -1.85em!important;
+            margin-right: -1.85em;
 
             .sender {
-                margin-left: 15em!important;
+                margin-left: 15em;
             }
         }
 

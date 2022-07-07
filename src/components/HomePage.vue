@@ -59,15 +59,6 @@
   </div>
 </template>
 
-<script setup>
-
-  // import { useMq } from "vue3-mq"
-  import { inject, onMounted } from "vue";
-
-  // const mq = useMq()
-
-</script>
-
 <script>
 import MainHeader from './MainHeader.vue'
 import ChatBox from './ChatBox.vue'
@@ -79,42 +70,19 @@ export default {
     MainHeader,
     ChatBox,
     HappyBirthday
-  },
-  inject: ["mq"],
-  computed: {
-    displayText() {
-      return this.mq.current === 'mobile' ? 'I am small' : 'I am large'
-    }
-  },
-  template: `
-    {{ displayText }}
-  `,
-  methods: {
-    setup() {
-    const updateBreakpoints = inject("updateBreakpoints");
-
-      onMounted(() => {
-        updateBreakpoints({
-            mobile: 450,
-            tablet: 900,
-            laptop: 1250,
-            desktop: Infinity
-          })
-      })
-    }
   }
 }
 </script>
 
 <style scoped>
  .container {
-    margin: 0 auto;
+    margin: 16vh auto!important;
   }
 
   .account {
     background-color: rgba(223, 223, 223, 0.247);
     backdrop-filter: blur(5px);
-    padding: 5em;
+    /* padding: 5em; */
     border: .1em solid rgb(223, 223, 223);
     border-radius: .5em;
   }
@@ -192,26 +160,26 @@ export default {
   @media only screen and (max-width: 415px) {
 
     .container {
-      margin-top: 12vh!important;
-      width: 90vw!important;
+      width: 100%!important;
     }
 
     .header {
       flex-direction: column;
       text-align: center;
+      padding: 4em;
     }
 
-    table {
-      width: 85.8vw;
-      margin-left: -18vw;
+    .account table {
+      margin: 4vh auto;
+      width: 100%!important;
     }
 
     table img {
-      width: 102%!important;
+      width: 100%;
     }
 
     thead {
-      width: 95%!important;
+      width: 95.5%!important;
     }
 
     .account-wrapper {
@@ -220,15 +188,15 @@ export default {
     }
 
     .account-management {
-      width: 73vw!important;
-      margin: 5vh auto -5vh -8vh!important;
+      width: 76vw!important;
+      font-size: .75em;
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .container {
-      margin-top: 12vh!important;
-      width: 90vw!important;
+      margin-top: 12vh;
+      width: 90vw;
     }
 
     .header {
@@ -243,11 +211,11 @@ export default {
     }
 
     table img {
-      width: 100%!important;
+      width: 100%;
     }
 
     thead {
-      width: 98%!important;
+      width: 98%;
     }
 
     .account {
@@ -255,15 +223,15 @@ export default {
     }
 
     .account-wrapper {
-      width: 100%!important;
+      width: 100%;
       padding: 0;
       flex-direction: column;
       margin: 0 auto;
     }
 
     .account-management {
-      width: 73vw!important;
-      margin-left: -3vw;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .karen-container {

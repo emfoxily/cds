@@ -45,32 +45,26 @@ export default {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 415px) {
+
+  .birthday h2 {
+    font-size: 1.355em;
+  }
 
   .container {
-    width: 100%!important;
+    margin: -20vh auto;
   }
 
   .video-player {
     width: 90%;
-  }
-
-}
-
-@media only screen and (max-width: 415px) {
-  .container {
-    margin: -20vh auto!important;
-  }
-
-  .video-player {
-    width: 90%!important;
-    height: 30%!important;
+    height: 30%;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .container {
     height: 50vh;
+    margin: 3vh auto!important;
   }
 
   .birthday h2 {
