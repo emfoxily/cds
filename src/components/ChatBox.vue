@@ -79,24 +79,44 @@ export default {
         karens: [
             "You're not giving me a refund????",
             "THIS IS ABSOLUTELY UNACCEPTABLE!!!!",
-            "I DEMAND TO SPEAK TO YOUR MANAGER RIGHT THIS INSTANT!!!!!",
+            "I DEMAND TO SPEAK TO YOUR MANAGER RIGHT THIS INSTANT!!!!!"
+        ],
+        surprise: [
             "Oh, so YOU'RE the manager??? In that case...",
-            "You should know the gift cards are real.",
-            "First one is $25 for Starbucks and the second is $50 for DoorDash!",
+            "I guess I should let you know that the gift cards are real and for you...",
+            "The first one is $25 for Starbucks and the second is $50 for DoorDash!",
             "Happy Birthday, Ben!! I hope you enjoy the gift cards. :)",
         ]
     }),
     methods: {
         updateScroll() {
             for (let i = 0; i < this.karens.length; i++) {
-                if (this.karens.length > 0 || this.$scrolled == false){
+                if (this.karens.length != 0){
+                    var element = document.getElementById("chat-box");
+                    element.scrollTop = element.scrollHeight - element.clientHeight;
+                } else {
+                    // element.scrollTop = 0;
+                    this.scrollUpdate()
+                }
+            }
+            
+        },
+
+        resetScroll() {
+            var element = document.getElementById("chat-box");
+            element.scrollTop = 0
+            console.log(this.surprise)
+        },
+
+        scrollUpdate() {
+            for (let i = 0; i < this.surprise.length; i++ ) {
+                if (this.surprise.length != 0) {
                     var element = document.getElementById("chat-box");
                     element.scrollTop = element.scrollHeight - element.clientHeight;
                 } else {
                     element.scrollTop = 0;
                 }
             }
-            
         },
 
         sendMessage(index) {
@@ -108,8 +128,6 @@ export default {
 
             this.message = ""
 
-           
-            
             setTimeout(() => {
                 for (let i=0; i < this.karens.length; i++) {
                  if (this.karens.length > 0) {
@@ -118,17 +136,66 @@ export default {
                         text: this.karens[0],
                         author: 'Karen'
                     })
-                    this.karens.splice(index, 1)
                     setInterval(this.updateScroll,100);
+                    this.karens.splice(index, 1)
                     return this.karens[i]
                 } else {
-                    this.$scrolled = true;
-                    setInterval(this.updateScroll, 1000);
-                    break;
+                    //
                 }
             }
 
             }, 1000)
+
+                if (this.karens.length == 0 && this.surprise.length > 0) {
+                    setTimeout(() => {
+                        setInterval(this.scrollUpdate, 100)
+                        this.messages.push({
+                            text: this.surprise[0],
+                            author: 'Karen'
+                        })
+
+                        this.surprise.splice(index, 0)
+
+                        setTimeout(() => {
+                            // setInterval(this.scrollUpdate, 100)
+                            this.messages.push({
+                            text: this.surprise[0],
+                            author: 'Karen'
+                            })
+                            clearInterval(this.scrollUpdate)
+                        }, 3000)
+
+                        this.surprise.splice(index, 0)
+
+                        setTimeout(() => {
+                            // setInterval(this.scrollUpdate, 100)
+                            this.messages.push({
+                            text: this.surprise[1],
+                            author: 'Karen'
+                            })
+                            clearInterval(this.scrollUpdate)
+                        }, 7000)
+
+                        this.surprise.splice(index, 1)
+
+                        setTimeout(() => {
+                            // setInterval(this.scrollUpdate, 100)
+                            this.messages.push({
+                            text: this.surprise[2],
+                            author: 'Karen'
+                            })
+                            this.surprise = []
+                            clearInterval(this.scrollUpdate)
+                        }, 10000)
+                    }, 1500)
+
+                } else {
+                    //
+                }
+
+            // if (this.surprise.length == 0) {
+            //     this.resetScroll()
+            // }
 
         }
 
