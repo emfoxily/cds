@@ -71,25 +71,13 @@ nav span {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 415px) {
-    nav {
-        color: transparent;
-        width: 80vw;
-        margin: -11vh 6vw;
-    }
-
-    nav img {
-        width: 30vw;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1920px) {
 
     nav {
         position:fixed;
-        margin: -10vh 5%;
-        font-size: .8em;
-        width: 86.5vw;
+        margin: -13vh 5%!important;
+        font-size: 1em!important;
+        width: 88vw!important;
     }
     nav img {
         width: 70%;
@@ -111,18 +99,30 @@ nav span {
 
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1024px) {
 
     nav {
         position:fixed;
-        margin: -17vh 5%;
-        font-size: 1em;
-        width: 88vw;
+        margin: -7vh 5%;
+        font-size: .8em;
+        width: 86.5vw;
     }
     nav img {
         width: 70%;
     }
 
+}
+
+@media only screen and (max-width: 415px) {
+    nav {
+        color: transparent;
+        width: 80vw;
+        margin: -11vh 6vw;
+    }
+
+    nav img {
+        width: 30vw;
+    }
 }
 
 </style>

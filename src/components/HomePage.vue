@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
  .container {
-    margin: 20vh auto!important;
+    margin: 20vh auto;
   }
 
   .account {
@@ -113,7 +113,7 @@ export default {
 
   .account-wrapper {
     display: flex;
-    justify-content: space-between!important;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2em;
   }
@@ -159,21 +159,27 @@ export default {
   }
 
  
-  @media only screen and (max-width: 415px) {
 
+  @media only screen and (max-width: 1920px) {
     .container {
-      width: 100%!important;
+      margin-top: 15vh;
+      width: 90vw;
     }
 
     .header {
-      flex-direction: column;
+      /* flex-direction: column; */
       text-align: center;
-      padding: 4em;
+      margin-top: 1vh;
     }
 
-    .account table {
-      margin: 4vh auto;
-      width: 100%!important;
+    .table-wrap {
+      padding-right: 12em;
+      margin-left: -12vw;
+    }
+
+    table {
+      width: 35vw;
+      margin-top: 2vh;
     }
 
     table img {
@@ -181,17 +187,86 @@ export default {
     }
 
     thead {
-      width: 95.5%!important;
+      width: 96.8%;
+      font-size: 1.35em;
+    }
+
+    .account {
+      margin-top: 5vh;
+      padding: 5em;
     }
 
     .account-wrapper {
-      width: 100%!important;
+      justify-content: space-between;
+      width: 60%;
       padding: 0;
+      flex-direction: row;
+      margin: 0 auto;
     }
 
     .account-management {
-      width: 76vw!important;
-      font-size: .75em;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .karen-container {
+      margin: 5vh auto;
+    }
+
+    .karen-container .message {
+      text-align: center;
+    }
+  }
+
+    @media only screen and (max-width: 1366px) {
+    .container {
+      margin-top: 12vh;
+      width: 90vw;
+    }
+
+    .header {
+      /* flex-direction: column; */
+      text-align: center;
+      margin-top: -3vh;
+    }
+
+    table {
+      width: 40vw;
+      margin-top: 5vh;
+    }
+
+    table img {
+      width: 100%;
+    }
+
+    thead {
+      width: 96.8%;
+      font-size: 1.35em;
+    }
+
+    .account {
+      margin-top: 5vh;
+      padding: 5em;
+    }
+
+    .account-wrapper {
+      width: 70%;
+      padding: 0;
+      /* flex-direction: column; */
+      margin: 0 11vw;
+    }
+
+    .account-management {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .karen-container {
+      margin: 5vh -10vw;
+    }
+
+    .karen-container .message {
+      text-align: center;
     }
   }
 
@@ -208,8 +283,8 @@ export default {
     }
 
     table {
-      width: 75vw;
-      margin-top: 2vh;
+      width: 90%;
+      margin: 2vh 18vw;
     }
 
     table img {
@@ -238,7 +313,7 @@ export default {
     }
 
     .karen-container {
-      margin: 5vh auto;
+      margin: 3vh auto;
     }
 
     .karen-container .message {
@@ -246,78 +321,24 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1366px) {
+
+
+
+  @media only screen and (max-width: 415px) {
+
     .container {
-      margin-top: 12vh;
-      width: 90vw;
+      width: 100%;
     }
 
     .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: -3vh;
-    }
-
-    table {
-      width: 100%;
-      margin-top: 12.5vh;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 96.8%;
-      font-size: 1.35em!important;
-    }
-
-    .account {
-      margin-top: 5vh;
-      padding: 5em;
-    }
-
-    .account-wrapper {
-      width: 70%;
-      padding: 0;
       flex-direction: column;
-      margin: 0 auto;
-    }
-
-    .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 5vh auto;
-    }
-
-    .karen-container .message {
       text-align: center;
-    }
-  }
-
-  @media only screen and (max-width: 1920px) {
-    .container {
-      margin-top: 12vh;
-      width: 90vw;
+      padding: 4em;
     }
 
-    .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: 1vh;
-    }
-
-    .table-wrap {
-      padding-right: 12em;
-      margin-left: -12vw;
-    }
-
-    table {
-      width: 35vw;
-      margin-top: 2vh;
+    .account table {
+      margin: 4vh auto;
+      width: 100%;
     }
 
     table img {
@@ -325,34 +346,17 @@ export default {
     }
 
     thead {
-      width: 96.8%;
-      font-size: 1.35em!important;
-    }
-
-    .account {
-      margin-top: 5vh;
-      padding: 5em;
+      width: 95.5%;
     }
 
     .account-wrapper {
-      justify-content: space-between!important;
-      width: 60%;
+      width: 100%;
       padding: 0;
-      flex-direction: row;
-      margin: 0 auto;
     }
 
     .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 5vh auto;
-    }
-
-    .karen-container .message {
-      text-align: center;
+      width: 76vw;
+      font-size: .75em;
     }
   }
 

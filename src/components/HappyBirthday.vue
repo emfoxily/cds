@@ -39,9 +39,10 @@ export default {
 }
 
 .video-player {
+  display: block;
   background-color: black;
-  width: 720px;
-  height: 360px;
+  /* width: 720px;
+  height: 360px; */
   margin: 0 auto;
 }
 
@@ -64,7 +65,7 @@ export default {
 @media only screen and (max-width: 1024px) {
   .container {
     height: 50vh;
-    margin: 3vh auto!important;
+    margin: 3vh auto;
   }
 
   .birthday h2 {
@@ -74,19 +75,23 @@ export default {
 
 @media only screen and (max-width: 1366px) {
   .container {
-    height: 70vh;
-    margin: 3vh auto!important;
+    height: auto;
+    margin: 3vh auto;
   }
 
   .birthday h2 {
     margin-top: -1vh;
+  }
+
+  .video-player {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 1920px) {
   .container {
     height: 80vh;
-    margin: 3vh auto!important;
+    margin: 3vh auto;
   }
 
   .birthday h2 {
