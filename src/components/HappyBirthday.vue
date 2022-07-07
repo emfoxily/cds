@@ -72,4 +72,15 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  .container {
+    height: 70vh;
+    margin: 3vh auto!important;
+  }
+
+  .birthday h2 {
+    margin-top: -1vh;
+  }
+}
+
 </style>

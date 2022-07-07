@@ -92,6 +92,34 @@ export default {
         }
     }
 
+     @media only screen and (max-width: 1366px) {
+        header {
+            width: 98.5%;
+            /* margin: -4vh 0 9vh auto; */
+            height: 55vh;
+        }
+        
+        header h2 {
+            font-size: 2em;
+            margin: 15% auto;
+            width: 55%;
+        }
+
+        .container {
+            width: 80vw;
+            padding: 2em 6em 0 5em;
+            display: flex;
+            /* flex-direction: column-reverse; */
+        }
+
+        .container img {
+            width: 20vw;
+            height: 100%;
+            margin: 4vh auto;
+            margin-bottom: 5vh;
+        }
+    }
+
     
 
 </style>

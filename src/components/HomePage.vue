@@ -244,4 +244,56 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1366px) {
+    .container {
+      margin-top: 12vh;
+      width: 90vw;
+    }
+
+    .header {
+      /* flex-direction: column; */
+      text-align: center;
+      margin-top: -3vh;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 12.5vh;
+    }
+
+    table img {
+      width: 100%;
+    }
+
+    thead {
+      width: 96.8%;
+      font-size: 1.35em!important;
+    }
+
+    .account {
+      margin-top: 5vh;
+      padding: 5em;
+    }
+
+    .account-wrapper {
+      width: 70%;
+      padding: 0;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .account-management {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .karen-container {
+      margin: 5vh auto;
+    }
+
+    .karen-container .message {
+      text-align: center;
+    }
+  }
+
 </style>

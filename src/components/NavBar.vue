@@ -97,4 +97,18 @@ nav span {
 
 }
 
+@media only screen and (min-width: 1366px) {
+
+    nav {
+        position:fixed;
+        margin: -13vh 5%;
+        font-size: 1em;
+        width: 86.5vw;
+    }
+    nav img {
+        width: 70%;
+    }
+
+}
+
 </style>

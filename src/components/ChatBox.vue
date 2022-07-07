@@ -402,5 +402,60 @@ button:hover {
         }
     }
 
+    @media only screen and (max-width: 1366px) {
+
+        .chat-box-list-container {
+            overflow-x: hidden;
+        }
+
+        .chat-box {
+            width: 35vw;
+            height: 60vh;
+        }
+
+        .chat-name {
+            font-size: 1em;
+            padding: 1em;
+        }
+
+        .chat-name img {
+            width: 5vw;
+        }
+
+        .chat-box-list-container {
+            height: 100%;
+            padding: 1em;
+        }
+
+        .Karen, .Ben {
+            p {
+                width: 15.5vw;
+                font-size: 1em;
+            }
+
+        }
+
+        .sender {
+            font-size: .75em!important;
+        }
+
+        .Karen {
+            margin-left: -1.5em;
+        }
+
+        .Ben {
+
+            margin-right: -4.5em;
+
+            .sender {
+                margin-left: 15em;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
 
 </style>
