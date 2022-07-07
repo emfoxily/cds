@@ -75,7 +75,7 @@ nav span {
 
     nav {
         position:fixed;
-        margin: -12.5vh 5%!important;
+        margin: -14vh 5%!important;
         font-size: 1em;
         width: 88.35vw!important;
     }
@@ -89,7 +89,7 @@ nav span {
 
     nav {
         position:fixed;
-        margin: -10vh 5%!important;
+        margin: -11vh 4.8vw!important;
         font-size: 1em;
         width: 87.5vw!important;
     }
