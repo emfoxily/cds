@@ -220,6 +220,7 @@ export default {
 
     .account {
       margin-top: -7vh;
+      padding: 5em;
     }
 
     .account-wrapper {
