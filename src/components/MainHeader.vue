@@ -88,4 +88,32 @@ export default {
         }
     }
 
+     @media only screen and (min-width: 1024px) {
+        header {
+            width: 90vw;
+            margin: -4vh 0 9vh auto;
+            height: 38vh!important;
+        }
+        
+        header h2 {
+            font-size: 1em;
+            margin: 25% auto;
+            width: 40%;
+        }
+
+        .container {
+            width: 80vw;
+            padding: 2em 5em;
+            display: flex;
+            /* flex-direction: column-reverse; */
+        }
+
+        .container img {
+            width: 30.5vw;
+            height: 100%;
+            margin: 0 auto;
+            margin-bottom: 5vh;
+        }
+    }
+
 </style>

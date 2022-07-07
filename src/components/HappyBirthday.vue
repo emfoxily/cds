@@ -70,4 +70,14 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .container {
+    height: 50vh;
+  }
+
+  .birthday h2 {
+    margin-top: -1vh;
+  }
+}
+
 </style>

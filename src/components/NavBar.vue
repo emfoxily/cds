@@ -104,4 +104,22 @@ nav span {
 
 }
 
+@media only screen and (min-width: 1024px) {
+
+    nav {
+        position:absolute;
+        /* margin: 0 auto!important; */
+        font-size: .8em;
+        width: 80vw;
+        /* top: 0%!important; */
+        /* left: 4.3%!important; */
+        margin: 1% -3.5%!important;
+    }
+
+    nav img {
+        width: 70%;
+    }
+
+}
+
 </style>

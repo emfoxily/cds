@@ -86,6 +86,7 @@ export default {
             "I guess I should let you know that the gift cards are real and for you...",
             "The first one is $25 for Starbucks and the second is $50 for DoorDash!",
             "Happy Birthday, Ben!! I hope you enjoy the gift cards. :)",
+            "Oh, and scroll down for another surprise!"
         ]
     }),
     methods: {
@@ -184,11 +185,22 @@ export default {
                             text: this.surprise[2],
                             author: 'Karen'
                             })
+                            clearInterval(this.scrollUpdate)
+                        }, 10000)
+
+                        this.surprise.splice(index, 0)
+
+                        setTimeout(() => {
+                            // setInterval(this.scrollUpdate, 100)
+                            this.messages.push({
+                            text: this.surprise[3],
+                            author: 'Karen'
+                            })
                             this.surprise = []
                             clearInterval(this.scrollUpdate)
                         }, 10000)
+                        
                     }, 1500)
-
                 } else {
                     //
                 }
@@ -212,6 +224,7 @@ export default {
     background-color: rgb(233, 233, 233);
     padding: 2em;
     border-radius: .5em .5em 0 0;
+    border-bottom: .1em solid rgba(90, 90, 90, 0.363);
 }
 
 .chat-name img {
@@ -389,6 +402,50 @@ button:hover {
             }
         }
 
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        .chat-box-list-container {
+            overflow-x: hidden!important;
+        }
+
+        .chat-box {
+            width: 45vw!important;
+            height: 50vh;
+        }
+
+        .chat-name img {
+            width: 7vw;
+        }
+
+        .chat-box-list-container {
+            height: 100%;
+        }
+
+        .Karen, .Ben {
+            p {
+                width: 20vw!important;
+            }
+
+        }
+
+        .Karen {
+            margin-left: -1.5em!important;
+        }
+
+        .Ben {
+
+            margin-right: -1.85em!important;
+
+            .sender {
+                margin-left: 15em!important;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
     }
 
 

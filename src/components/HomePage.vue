@@ -288,4 +288,51 @@ export default {
     }
   }
 
+  @media only screen and (min-width: 1024px) {
+    .container {
+      margin-top: 12vh!important;
+      width: 90vw!important;
+    }
+
+    .header {
+      /* flex-direction: column; */
+      text-align: center;
+      margin-top: -3vh;
+    }
+
+    table {
+      width: 75vw;
+      /* margin-left: -1.5vw; */
+      margin-top: -1vh;
+    }
+
+    table img {
+      width: 100%!important;
+    }
+
+    thead {
+      width: 98%!important;
+    }
+
+    .account-wrapper {
+      width: 100%!important;
+      padding: 0;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .account-management {
+      width: 73vw!important;
+      margin: 5vh -2.5vw 0!important;
+    }
+
+    .karen-container {
+      margin: 3vh auto;
+    }
+
+    .karen-container .message {
+      text-align: center;
+    }
+  }
+
 </style>
