@@ -7,7 +7,7 @@
         </span>
       </div>
       <div class="video-player">
-        video here
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uWrzDgh14cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 </template>
@@ -39,11 +39,18 @@ export default {
 }
 
 .video-player {
+  /* position: relative; */
   display: block;
-  background-color: black;
-  /* width: 720px;
-  height: 360px; */
+  /* background-color: black; */
+  width: 720px;
   margin: 0 auto;
+}
+
+.video-player iframe {
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 415px) {
