@@ -53,30 +53,19 @@ export default {
   height: 100%;
 }
 
-@media only screen and (max-width: 415px) {
-
-  .birthday h2 {
-    font-size: 1.355em;
-  }
-
+@media only screen and (max-width: 1920px) {
   .container {
-    margin: -20vh auto;
-  }
-
-  .video-player {
-    width: 90%;
-    height: 30%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .container {
-    height: 50vh;
+    height: 80vh;
     margin: 3vh auto;
   }
 
   .birthday h2 {
     margin-top: -1vh;
+  }
+
+  .video-player {
+    width: 55%;
+    height: 50vh;
   }
 }
 
@@ -95,19 +84,30 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1024px) {
   .container {
-    height: 80vh;
+    height: 50vh;
     margin: 3vh auto;
   }
 
   .birthday h2 {
     margin-top: -1vh;
   }
+}
+
+@media only screen and (max-width: 415px) {
+
+  .birthday h2 {
+    font-size: 1.355em;
+  }
+
+  .container {
+    margin: -20vh auto;
+  }
 
   .video-player {
-    width: 55%;
-    height: 50vh;
+    width: 90%;
+    height: 30%;
   }
 }
 
