@@ -42,8 +42,9 @@ export default {
   /* position: relative; */
   display: block;
   /* background-color: black; */
-  width: 720px;
-  margin: 0 auto;
+  width: 50%;
+  height: 60%;
+  margin: -5vh auto;
 }
 
 .video-player iframe {
@@ -62,11 +63,6 @@ export default {
   .birthday h2 {
     margin-top: -1vh;
   }
-
-  .video-player {
-    width: 55%;
-    height: 50vh;
-  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -77,10 +73,6 @@ export default {
 
   .birthday h2 {
     margin-top: -1vh;
-  }
-
-  .video-player {
-    width: 100%;
   }
 }
 
@@ -103,11 +95,6 @@ export default {
 
   .container {
     margin: -20vh auto;
-  }
-
-  .video-player {
-    width: 90%;
-    height: 30%;
   }
 }
 
