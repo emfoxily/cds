@@ -99,7 +99,7 @@ export default {
     @media screen and (min-width: 1025px) and (max-width: 1366px) {
         header {
             width: 98.5%;
-            /* margin: -4vh 0 9vh auto; */
+            margin: 5em auto!important;
             height: auto;
         }
         
@@ -154,7 +154,8 @@ export default {
 
     @media only screen and (max-width: 415px) {
         header {
-            width: 100%;
+            width: 112%;
+            margin: 0 auto;
             height: 70vh;
         }
 
@@ -165,9 +166,9 @@ export default {
         }
 
         .container {
-            margin: 0 -16%;
+            margin: 0 -15%;
             flex-direction: column-reverse;
-            /* width: 90%; */
+            width: 90%;
         }
 
         .container img {

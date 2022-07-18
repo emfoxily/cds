@@ -89,9 +89,9 @@ nav span {
 
     nav {
         position:fixed;
-        margin: -11vh 4.8vw!important;
+        margin: -12vh 5.5vw!important;
         font-size: 1em;
-        width: 89vw!important;
+        width: 87.5vw!important;
     }
     nav img {
         width: 70%;
@@ -116,12 +116,13 @@ nav span {
 @media only screen and (max-width: 415px) {
     nav {
         color: transparent;
-        width: 80vw;
-        margin: -11vh 6vw;
+        width: 95vw;
+        margin: -10vh 5vw;
     }
 
     nav img {
-        width: 30vw;
+        width: 40vw;
+        margin-left: 1em;
     }
 }
 

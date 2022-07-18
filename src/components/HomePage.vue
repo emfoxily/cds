@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <MainHeader class="plswork" />
+    <MainHeader />
     <div class="account">
       <div class="header">
         <h3>
@@ -326,14 +326,15 @@ export default {
 
   @media only screen and (max-width: 415px) {
 
-    .container {
-      width: 100%;
-    }
-
     .header {
       flex-direction: column;
       text-align: center;
       padding: 4em;
+    }
+
+    .account {
+      margin: 1vh auto;
+      width: 70%;
     }
 
     .account table {

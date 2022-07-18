@@ -325,7 +325,7 @@ button:hover {
 }
 
 
-    @media only screen and (max-width: 1920px) {
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
 
         .chat-box-list-container {
             overflow-x: hidden;
@@ -333,7 +333,7 @@ button:hover {
 
         .chat-box {
             width: 25vw;
-            height: 60vh;
+            height: 70vh;
         }
 
         .chat-name {
@@ -380,7 +380,7 @@ button:hover {
         }
     }
 
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 
         .chat-box-list-container {
             overflow-x: hidden;
@@ -388,7 +388,7 @@ button:hover {
 
         .chat-box {
             width: 35vw;
-            height: 60vh;
+            height: 70vh;
         }
 
         .chat-name {
@@ -408,7 +408,7 @@ button:hover {
         .Karen, .Ben {
             p {
                 width: 15.5vw;
-                font-size: 1em;
+                font-size: .83em;
             }
 
         }
@@ -423,7 +423,7 @@ button:hover {
 
         .Ben {
 
-            margin-right: -4.5em;
+            margin-left: -2em;
 
             .sender {
                 margin-left: 15em;
