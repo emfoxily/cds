@@ -71,6 +71,20 @@ nav span {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1921px){
+
+    nav {
+        position:fixed;
+        margin: -14vh 5%!important;
+        font-size: 1em;
+        width: 89vw!important;
+    }
+    nav img {
+        width: 70%;
+    }
+
+}
+
 @media only screen and (min-width: 1367px) and (max-width: 1920px){
 
     nav {
@@ -117,7 +131,7 @@ nav span {
     nav {
         color: transparent;
         width: 95vw;
-        margin: -10vh 5vw;
+        margin: -10.5vh 5vw;
     }
 
     nav img {

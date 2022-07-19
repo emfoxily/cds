@@ -54,6 +54,17 @@ export default {
   height: 100%;
 }
 
+@media only screen and (min-width: 1921px) {
+  .container {
+    height: 80vh;
+    margin: 3vh auto;
+  }
+
+  .birthday h2 {
+    margin-top: -1vh;
+  }
+}
+
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
   .container {
     height: 80vh;
@@ -99,6 +110,11 @@ export default {
 
   .container {
     margin: -20vh auto;
+    width: 100vw!important;
+  }
+
+  .video-player {
+    width: 100%;
   }
 }
 

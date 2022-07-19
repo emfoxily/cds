@@ -158,6 +158,64 @@ export default {
     cursor: pointer;
   }
 
+  @media only screen and (min-width: 1921px) {
+    .container {
+      margin-top: 15vh;
+      width: 90vw;
+    }
+
+    .header {
+      /* flex-direction: column; */
+      text-align: center;
+      margin-top: 1vh;
+    }
+
+    .table-wrap {
+      padding-right: 12em;
+      margin-left: -12vw;
+    }
+
+    table {
+      width: 35vw;
+      margin-top: 2vh;
+    }
+
+    table img {
+      width: 100%;
+    }
+
+    thead {
+      width: 96.8%;
+      font-size: 1.35em;
+    }
+
+    .account {
+      margin-top: 5vh;
+      padding: 5em;
+    }
+
+    .account-wrapper {
+      justify-content: space-between;
+      width: 60%;
+      padding: 0;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    .account-management {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .karen-container {
+      margin: 5vh auto;
+    }
+
+    .karen-container .message {
+      text-align: center;
+    }
+  }
+
  
 
   @media only screen and (max-width: 1920px) {
@@ -326,6 +384,14 @@ export default {
 
   @media only screen and (max-width: 415px) {
 
+    .karen-container {
+      margin-left: -1em;
+    }
+
+    .account-management {
+      margin-left: -4em;
+    }
+
     .header {
       flex-direction: column;
       text-align: center;
@@ -338,8 +404,8 @@ export default {
     }
 
     .account table {
-      margin: 4vh auto;
-      width: 100%;
+      margin-left: 35%;
+      width: 90vw;
     }
 
     table img {

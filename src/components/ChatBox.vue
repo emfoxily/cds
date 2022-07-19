@@ -481,10 +481,20 @@ button:hover {
     }
 
        @media only screen and (max-width: 415px) {
+
+        .chat-name {
+            font-size: 1.5em;
+            padding: 1.3em;
+        }
+
+        .chat-name img {
+            width: 20vw;
+        }
+
          .chat-box {
-            width: 95.5%;
-            height: auto;
-            // margin-left: -15vw;
+            width: 120%;
+            height: 55vh;
+            margin-left: -2.175em;
             font-size: .8em;
         }
 
@@ -495,6 +505,7 @@ button:hover {
         .Karen, .Ben {
             p {
                 width: 50vw;
+                font-size: 1.2em;
             }
 
         }
