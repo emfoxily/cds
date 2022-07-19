@@ -77,6 +77,7 @@ export default {
 <style scoped>
  .container {
     margin: 20vh auto;
+    overflow-x: hidden;
   }
 
   .account {
