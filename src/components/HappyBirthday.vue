@@ -55,7 +55,7 @@ export default {
   height: 100%;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1921px) {
   .container {
     height: auto;
     margin: 3vh auto;
@@ -66,10 +66,25 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (min-width: 1367px) and (max-width: 1920px) {
   .container {
-    height: auto;
+    height: 80vh;
     margin: 3vh auto;
+  }
+
+  .birthday h2 {
+    margin-top: -1vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .container {
+    height: 90vh;
+    margin: 3vh auto;
+  }
+
+  .video-player {
+    width: 65%;
   }
 
   .birthday h2 {
@@ -100,7 +115,11 @@ export default {
 
   .container {
     margin: -20vh auto;
-    height: 50vh;
+    width: 100vw!important;
+  }
+
+  .video-player {
+    width: 100%;
   }
 }
 

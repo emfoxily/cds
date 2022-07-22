@@ -40,6 +40,34 @@ export default {
         filter: drop-shadow(10px 10px 8px rgb(119, 23, 23));
     }
 
+    @media only screen and (min-width: 1921px) {
+        header {
+            width: 90vw;
+            margin: 0 auto;
+            height: auto;
+        }
+        
+        header h2 {
+            font-size: 2em;
+            margin: 25% auto;
+            width: 55%;
+        }
+
+        .container {
+            width: 80vw;
+            padding: 2em 6em 0 5em;
+            display: flex;
+            /* flex-direction: column-reverse; */
+        }
+
+        .container img {
+            width: 28vw;
+            height: 100%;
+            margin: 4vh auto;
+            margin-bottom: 5vh;
+        }
+    }
+
      @media only screen and (min-width: 1601px) and (max-width: 1920px) {
         header {
             width: 90vw;
@@ -99,7 +127,7 @@ export default {
     @media screen and (min-width: 1025px) and (max-width: 1366px) {
         header {
             width: 98.5%;
-            /* margin: -4vh 0 9vh auto; */
+            margin: 5em auto!important;
             height: auto;
         }
         
@@ -154,9 +182,9 @@ export default {
 
     @media only screen and (max-width: 415px) {
         header {
-            width: 100%;
-            /* height: 70vh; */
-            margin-top: 10vh;
+            width: 112%;
+            margin: 0 auto;
+            height: 70vh;
         }
 
         header h2 {
@@ -166,9 +194,9 @@ export default {
         }
 
         .container {
-            margin: 0 -16%;
+            margin: 0 -15%;
             flex-direction: column-reverse;
-            /* width: 90%; */
+            width: 90%;
         }
 
         .container img {
