@@ -25,6 +25,7 @@ export default {
   border-radius: .5em;
   border: .1em solid rgb(207, 33, 33);
   filter: drop-shadow(5px 5px 5px rgba(51, 51, 51, 0.404));
+  height: auto;
 }
 
 .birthday {
@@ -42,8 +43,8 @@ export default {
   /* position: relative; */
   display: block;
   /* background-color: black; */
-  width: 50%;
-  height: 60%;
+  width: 75%;
+  height: 40%;
   margin: -5vh auto;
 }
 
@@ -56,7 +57,7 @@ export default {
 
 @media only screen and (max-width: 1920px) {
   .container {
-    height: 80vh;
+    height: auto;
     margin: 3vh auto;
   }
 
@@ -78,7 +79,7 @@ export default {
 
 @media only screen and (max-width: 1024px) {
   .container {
-    height: 50vh;
+    height: auto;
     margin: 3vh auto;
   }
 
@@ -89,12 +90,17 @@ export default {
 
 @media only screen and (max-width: 415px) {
 
+  .birthday {
+    /* margin-top: -10vh; */
+  }
+
   .birthday h2 {
     font-size: 1.355em;
   }
 
   .container {
     margin: -20vh auto;
+    height: 50vh;
   }
 }
 

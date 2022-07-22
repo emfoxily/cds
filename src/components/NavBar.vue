@@ -75,7 +75,7 @@ nav span {
 
     nav {
         position:fixed;
-        margin: -14vh 5%!important;
+        margin: -14.5vh 5%!important;
         font-size: 1em;
         width: 88.35vw!important;
     }
@@ -99,7 +99,7 @@ nav span {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     nav {
         position:fixed;
@@ -117,7 +117,7 @@ nav span {
     nav {
         color: transparent;
         width: 80vw;
-        margin: -11vh 6vw;
+        margin: -10.5vh 6vw;
     }
 
     nav img {

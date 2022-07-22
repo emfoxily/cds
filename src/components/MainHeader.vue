@@ -155,7 +155,8 @@ export default {
     @media only screen and (max-width: 415px) {
         header {
             width: 100%;
-            height: 70vh;
+            /* height: 70vh; */
+            margin-top: 10vh;
         }
 
         header h2 {
@@ -172,7 +173,7 @@ export default {
 
         .container img {
             margin: 1vh auto;
-            width: 75vw;
+            width: 70vw;
         }
     }
 
