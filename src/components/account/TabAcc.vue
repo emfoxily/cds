@@ -30,7 +30,7 @@
                     <div class="message">
                         You have <b style="color:rgb(201, 59, 59)">1</b> Karen waiting to be yelled at.
                     </div>
-                    <ChatBox class="chat"/>
+                    <TabChat />
                 </div>
             </div>
             <div class="account-management">
@@ -59,13 +59,13 @@
 
 <script>
     import { MqResponsive } from "vue3-mq";
-    import ChatBox from '../../components/ChatBox.vue';
+    import TabChat from '../chats/TabChat.vue';
 
     export default {
         name: 'TabAcc',
         components: {
             MqResponsive,
-            ChatBox
+            TabChat
         }
     }
 

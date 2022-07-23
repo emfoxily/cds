@@ -31,7 +31,7 @@ export default {
         border: .1em solid rgb(0, 0, 0);
         border-radius: .5em;
         filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
-        width: 65vw;
+        width: 95vw;
         margin: 0 auto;
     }
 

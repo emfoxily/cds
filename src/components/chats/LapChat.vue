@@ -1,78 +1,86 @@
 <template>
-    <section class="chat-box">
-        <div class="chat-name">
-            <img src="../assets/karen.png" />
-            <p>
-                Chat with <b>Karen</b>
-            </p>
-        </div>
-        <div id="chat-box" class="chat-box-list-container">
-            <ul class="chat-box-list">
-                <li
-                    class="message Karen"
-                >
+    <MqResponsive target="xl">
+        <section class="chat-box">
+            <div class="chat-name">
+                <img src="../../assets/karen.png" />
+                <p>
+                    Chat with <b>Karen</b>
+                </p>
+            </div>
+            <div id="chat-box" class="chat-box-list-container">
+                <ul class="chat-box-list">
+                    <li
+                        class="message Karen"
+                    >
 
-                    <div class="sender">
-                        Karen
+                        <div class="sender">
+                            Karen
+                        </div>
+
+                        <p>
+                            <span class="first-karen">
+                                Hi, I purchased two gift cards and used them but I want a refund now because my food and coffee were cold.
+                            </span>
+                        </p>
+
+                    </li>
+
+                    <li
+                        class="message Karen"
+                    >
+
+                        <div class="sender">
+                            Karen
+                        </div>
+
+                        <p>
+                            <span class="first-karen">
+                                Can you help me with this? The gift card numbers are XXXXXXXXXXXX and XXXXXXXXXXXX.
+                            </span>
+                        </p>
+                    </li>
+                    <li 
+                        class="message"
+                        v-for="(message, idx) in messages"
+                        :key="idx"
+                        :class="message.author"
+                    >
+
+                    <div class="sender" v-if="message.author == 'Karen'">
+                        {{ message.author }}
                     </div>
 
-                    <p>
-                        <span class="first-karen">
-                            Hi, I purchased two gift cards and used them but I want a refund now because my food and coffee were cold.
-                        </span>
-                    </p>
-
-                </li>
-
-                <li
-                    class="message Karen"
-                >
-
-                    <div class="sender">
-                        Karen
-                    </div>
-
-                    <p>
-                        <span class="first-karen">
-                            Can you help me with this? The gift card numbers are XXXXXXXXXXXX and XXXXXXXXXXXX.
-                        </span>
-                    </p>
-                </li>
-                <li 
-                    class="message"
-                    v-for="(message, idx) in messages"
-                    :key="idx"
-                    :class="message.author"
-                >
-
-                <div class="sender" v-if="message.author == 'Karen'">
-                    {{ message.author }}
-                </div>
-
-                    <p>
-                        <span>
-                            {{ message.text }}
-                        </span>
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <form @submit.prevent="sendMessage" class="chat-inputs">
-            <input 
-                type="text" 
-                v-model="message" 
-                required
-            />
-            <button @submit="sendMessage">
-                ➜
-            </button>
-        </form>
-    </section>
+                        <p>
+                            <span>
+                                {{ message.text }}
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <form @submit.prevent="sendMessage" class="chat-inputs">
+                <input 
+                    type="text" 
+                    v-model="message" 
+                    required
+                />
+                <button @submit="sendMessage">
+                    ➜
+                </button>
+            </form>
+        </section>
+    </MqResponsive>
 </template>
 
 <script>
+
+import { MqResponsive } from "vue3-mq";
+
 export default {
-    name: 'ChatBox',
+    name: 'LapChat',
+    components: {
+        MqResponsive
+    },
     data: () => ({
         message: '',
         messages: [],
@@ -225,23 +233,24 @@ export default {
     padding: 2em;
     border-radius: .5em .5em 0 0;
     border-bottom: .1em solid rgba(90, 90, 90, 0.363);
+    font-size: 1.25em;
     // color: black;
 }
 
 .chat-name img {
-    width: 3vw;
+    width: 7vw;
 }
 
 .chat-box {
     // border: .1em solid rgb(228, 228, 228);
-    width: 25vw;
+    width: 35vw;
     background-color: rgb(20, 20, 20);
     padding: .5em;
     border-radius: .5em;
 }
 
 .chat-box-list-container {
-    height: 35vw;
+    height: 45vw;
     overflow: auto;
     background-color: rgb(68, 68, 68);
     // border-radius: .5em .5em 0 0;
@@ -266,7 +275,7 @@ export default {
          padding: .8em;
          border-radius: .5em;
          margin-right: 3em;
-         font-size: .85em;
+         font-size: 1.15em;
          width:15vw;
     }
 

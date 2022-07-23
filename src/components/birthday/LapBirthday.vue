@@ -33,7 +33,7 @@ export default {
   /* border: .1em solid rgb(207, 33, 33); */
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
   height: auto;
-  width: 65vw;
+  width: 95vw;
   margin: 0 auto 10vh;
 }
 
@@ -57,7 +57,7 @@ export default {
 .video-player iframe {
   /* position: absolute; */
   margin: 0 auto;
-  width: 65vw;
+  width: 95vw;
   height: 60vh;
 }
 

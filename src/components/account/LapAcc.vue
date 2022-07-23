@@ -30,7 +30,7 @@
                     <div class="message">
                         You have <b style="color:rgb(201, 59, 59)">1</b> Karen waiting to be yelled at.
                     </div>
-                    <ChatBox class="chat"/>
+                    <LapChat class="chat"/>
                 </div>
             </div>
             <div class="account-management">
@@ -59,13 +59,13 @@
 
 <script>
     import { MqResponsive } from "vue3-mq";
-    import ChatBox from '../../components/ChatBox.vue';
+    import LapChat from '../chats/LapChat.vue';
 
     export default {
         name: 'LapAcc',
         components: {
             MqResponsive,
-            ChatBox
+            LapChat
         }
     }
 
@@ -80,7 +80,7 @@
     border-radius: .5em;
     color: white;
     /* padding: 5em; */
-    width: 65vw;
+    width: 95vw;
     margin: 3vh auto;
   }
 
@@ -111,7 +111,7 @@
 
   .account-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2em;
   }
@@ -120,10 +120,11 @@
     table-layout: fixed;
     border-radius: .5em;
     background-color: rgb(214, 214, 214);
+    width: 50vw;
   }
 
   table img {
-    width: 30vw;
+    width: 49vw;
   }
 
   table thead {
@@ -133,7 +134,7 @@
     color: white;
     border-radius: .5em .5em 0 0;
     padding: .5em;
-    width: 95.75%;
+    width: 97.55%;
   }
 
   thead th {

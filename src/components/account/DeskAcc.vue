@@ -59,7 +59,7 @@
 
 <script>
     import { MqResponsive } from "vue3-mq";
-    import ChatBox from '../../components/ChatBox.vue';
+    import ChatBox from '../chats/ChatBox.vue';
 
     export default {
         name: 'DeskAcc',
