@@ -45,7 +45,7 @@
                     :class="message.author"
                 >
 
-                <div class="sender">
+                <div class="sender" v-if="message.author == 'Karen'">
                     {{ message.author }}
                 </div>
 
@@ -221,10 +221,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(34, 34, 34);
     padding: 2em;
     border-radius: .5em .5em 0 0;
     border-bottom: .1em solid rgba(90, 90, 90, 0.363);
+    // color: black;
 }
 
 .chat-name img {
@@ -232,17 +233,17 @@ export default {
 }
 
 .chat-box {
-    border: .1em solid rgb(228, 228, 228);
+    // border: .1em solid rgb(228, 228, 228);
     width: 25vw;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(20, 20, 20);
     padding: .5em;
     border-radius: .5em;
 }
 
 .chat-box-list-container {
-    height: 27vw;
+    height: 35vw;
     overflow: auto;
-    background-color: white;
+    background-color: rgb(68, 68, 68);
     // border-radius: .5em .5em 0 0;
 }
 
@@ -258,7 +259,7 @@ export default {
     .sender {
         font-size: 11px;
         margin-bottom: -1em;
-        color: rgb(90, 90, 90)
+        color: rgb(223, 223, 223)
     }
 
     p {
@@ -266,11 +267,12 @@ export default {
          border-radius: .5em;
          margin-right: 3em;
          font-size: .85em;
+         width:15vw;
     }
 
      .Ben {
         p {
-            background-color: rgb(207, 33, 33);
+            background-color: rgb(201, 59, 59);
             float: right;
         }
 
@@ -289,6 +291,7 @@ export default {
             background-color: rgb(233, 233, 233);
             line-height: 2em;
             float: left;
+            color: black;
         }
 
     }
@@ -312,8 +315,8 @@ input {
 
 button {
     width: 135px;
-    background-color: rgb(207, 33, 33);
-    border: .1em solid rgb(207, 33, 33);
+    background-color: rgb(201, 59, 59);
+    border: .1em solid rgb(201, 59, 59);
     border-radius: 0 0 .5em 0;
     color: white;
     font-size: 1.25em;
@@ -324,206 +327,9 @@ button:hover {
     cursor: pointer;
 }
 
-
-    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-
-        .chat-box-list-container {
-            overflow-x: hidden;
-        }
-
-        .chat-box {
-            width: 25vw;
-            height: 70vh;
-        }
-
-        .chat-name {
-            font-size: 1em;
-            padding: 1em;
-        }
-
-        .chat-name img {
-            width: 5vw;
-        }
-
-        .chat-box-list-container {
-            height: 100%;
-            padding: 1em;
-        }
-
-        .Karen, .Ben {
-            p {
-                width: 15.5vw;
-                font-size: 1em;
-            }
-
-        }
-
-        .sender {
-            font-size: .75em;
-        }
-
-        .Karen {
-            margin-left: -1.5em;
-        }
-
-        .Ben {
-
-            margin-right: -4.5em;
-
-            .sender {
-                margin-left: 15em;
-            }
-        }
-
-        input {
-            width: 100%;
-        }
-    }
-
-    @media only screen and (min-width: 1025px) and (max-width: 1366px) {
-
-        .chat-box-list-container {
-            overflow-x: hidden;
-        }
-
-        .chat-box {
-            width: 35vw;
-            height: 70vh;
-        }
-
-        .chat-name {
-            font-size: 1em;
-            padding: 1em;
-        }
-
-        .chat-name img {
-            width: 5vw;
-        }
-
-        .chat-box-list-container {
-            height: 100%;
-            padding: 1em;
-        }
-
-        .Karen, .Ben {
-            p {
-                width: 15.5vw;
-                font-size: .83em;
-            }
-
-        }
-
-        .sender {
-            font-size: .75em;
-        }
-
-        .Karen {
-            margin-left: -1.5em;
-        }
-
-        .Ben {
-
-            margin-left: -2em;
-
-            .sender {
-                margin-left: 15em;
-            }
-        }
-
-        input {
-            width: 100%;
-        }
-    }
-
-
-     @media only screen and (max-width: 1024px) {
-
-        .chat-box-list-container {
-            overflow-x: hidden;
-        }
-
-        .chat-box {
-            width: 45vw;
-            height: 50vh;
-        }
-
-        .chat-name img {
-            width: 7vw;
-        }
-
-        .chat-box-list-container {
-            height: 100%;
-        }
-
-        .Karen, .Ben {
-            p {
-                width: 20vw;
-            }
-
-        }
-
-        .Karen {
-            margin-left: -1.5em;
-        }
-
-        .Ben {
-
-            margin-right: -1.85em;
-
-            .sender {
-                margin-left: 15em;
-            }
-        }
-
-        input {
-            width: 100%;
-        }
-    }
-
-       @media only screen and (max-width: 415px) {
-
-        .chat-name {
-            font-size: 1.5em;
-            padding: 1.3em;
-        }
-
-        .chat-name img {
-            width: 20vw;
-        }
-
-         .chat-box {
-            width: 120%;
-            height: 55vh;
-            margin-left: -2.175em;
-            font-size: .8em;
-        }
-
-        .chat-box-list-container {
-            overflow-x: hidden;
-        }
-
-        .Karen, .Ben {
-            p {
-                width: 50vw;
-                font-size: 1.2em;
-            }
-
-        }
-
-        .Karen {
-            margin-left: -2em;
-        }
-
-        .Ben {
-
-            margin-right: -1.85em;
-
-            .sender {
-                margin-left: 2em;
-            }
-        }
-
-    }
+input {
+    background-color: rgb(231, 231, 231);
+}
 
 
 </style>

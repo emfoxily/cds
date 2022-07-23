@@ -8,12 +8,7 @@ const app = createApp(App)
 app.config.globalProperties.$scrolled = false;
 
 app.use(Vue3Mq, {
-    breakpoints: {
-        mobile: 450,
-        tablet: 900,
-        laptop: 1250,
-        desktop: Infinity
-    }
+    preset: 'bootstrap5'
 })
 
 app.mount('#app')
