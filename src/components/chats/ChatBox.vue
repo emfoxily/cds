@@ -241,7 +241,7 @@ export default {
 }
 
 .chat-box-list-container {
-    height: 35vw;
+    height: 30vw;
     overflow: auto;
     background-color: rgb(68, 68, 68);
     // border-radius: .5em .5em 0 0;
