@@ -1,431 +1,51 @@
 <template>
   <div class="container">
     <MainHeader />
-    <div class="account">
-      <div class="header">
-        <h3>
-          Welcome, <b style="color: rgb(207, 33, 33); font-weight: 600;">Benjamin</b>!
-        </h3>
-        <h4>
-          Logout
-        </h4>
-      </div>
-      <div class="account-wrapper">
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <th>
-                Your statistics as of: <b>July 24, 2022</b>
-              </th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="../assets/line-graph.png" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="karen-container">
-          <div class="message">
-            You have <b style="color:rgb(207, 33, 33)">1</b> Karen waiting to be yelled at.
-          </div>
-          <ChatBox />
-        </div>
-      </div>
-      <div class="account-management">
-        <h3>
-          Manage your Account
-        </h3>
-        <br />
-        <ul>
-          <li>
-            Update Name
-          </li>
-          <li>
-            Change Password
-          </li>
-          <li>
-            Privacy Policy
-          </li>
-          <li>
-            Delete Account
-          </li>
-        </ul>
-      </div>
-    </div>
-    <HappyBirthday />
+    <LapHeader />
+    <TabHeader />
+    <DeskAcc />
+    <LapAcc />
+    <TabAcc />
+    <DeskBirthday />
+    <LapBirthday />
+    <TabBirthday />
   </div>
 </template>
 
 <script>
-import MainHeader from './MainHeader.vue'
-import ChatBox from './ChatBox.vue'
-import HappyBirthday from './HappyBirthday.vue'
+
+import MainHeader from './headers/MainHeader.vue'
+import LapHeader from './headers/LapHeader.vue'
+import TabHeader from './headers/TabHeader.vue'
+
+import DeskBirthday from './birthday/DeskBirthday.vue'
+import LapBirthday from './birthday/LapBirthday.vue'
+import TabBirthday from './birthday/TabBirthday.vue'
+
+import DeskAcc from './account/DeskAcc.vue'
+import LapAcc from './account/LapAcc.vue'
+import TabAcc from './account/TabAcc.vue'
 
 export default {
   name: 'HomePage',
   components: {
     MainHeader,
-    ChatBox,
-    HappyBirthday
+    LapHeader,
+    TabHeader,
+    DeskBirthday,
+    DeskAcc,
+    LapAcc,
+    TabAcc,
+    LapBirthday,
+    TabBirthday
   }
 }
 </script>
 
 <style scoped>
- .container {
-    margin: 20vh auto;
-    overflow-x: hidden;
-  }
 
-  .account {
-    background-color: rgba(223, 223, 223, 0.247);
-    backdrop-filter: blur(5px);
-    /* padding: 5em; */
-    border: .1em solid rgb(223, 223, 223);
-    border-radius: .5em;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .1em solid rgba(51, 51, 51, 0.116);
-  }
-
-  .header h3 {
-    font-size: 1.5em;
-    font-weight: normal;
-  }
-
-  .header h4 {
-    cursor: pointer;
-  }
-
-  .header h4:hover {
-    color: rgb(207, 33, 33);
-    transition: .5s;
-  }
-
-  .message {
-    padding: 1em;
-  }
-
-  .account-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-  }
-
-  table {
-    table-layout: fixed;
-    border-radius: .5em;
-    background-color: rgb(255, 255, 255);
-  }
-
-  table thead {
-    display: table;
-    background-color: rgb(207, 33, 33);
-    text-align: center;
-    color: white;
-    border-radius: .5em .5em 0 0;
-    padding: .5em;
-  }
-
-  thead th {
-    font-weight: 400;
-  }
-
-  .account-management {
-    border-top: .1em solid rgba(51, 51, 51, 0.116);
-    padding: 2em;
-  }
-
-  .account-management h3 {
-    text-decoration: underline;
-  }
-
-  .account-management ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    color: rgb(207, 33, 33);
-  }
-
-  .account-management li {
-    cursor: pointer;
-  }
-
-  @media only screen and (min-width: 1921px) {
-    .container {
-      margin-top: 15vh;
-      width: 90vw;
-    }
-
-    .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: 1vh;
-    }
-
-    .table-wrap {
-      padding-right: 12em;
-      margin-left: -12vw;
-    }
-
-    table {
-      width: 35vw;
-      margin-top: 2vh;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 96.8%;
-      font-size: 1.35em;
-    }
-
-    .account {
-      margin-top: 5vh;
-      padding: 5em;
-    }
-
-    .account-wrapper {
-      justify-content: space-between;
-      width: 60%;
-      padding: 0;
-      flex-direction: row;
-      margin: 0 auto;
-    }
-
-    .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 5vh auto;
-    }
-
-    .karen-container .message {
-      text-align: center;
-    }
-  }
-
- 
-
-  @media only screen and (max-width: 1920px) {
-    .container {
-      margin-top: 15vh;
-      width: 90vw;
-    }
-
-    .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: 1vh;
-    }
-
-    .table-wrap {
-      padding-right: 12em;
-      margin-left: -12vw;
-    }
-
-    table {
-      width: 35vw;
-      margin-top: 2vh;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 96.8%;
-      font-size: 1.35em;
-    }
-
-    .account {
-      margin-top: 5vh;
-      padding: 5em;
-    }
-
-    .account-wrapper {
-      justify-content: space-between;
-      width: 60%;
-      padding: 0;
-      flex-direction: row;
-      margin: 0 auto;
-    }
-
-    .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 5vh auto;
-    }
-
-    .karen-container .message {
-      text-align: center;
-    }
-  }
-
-    @media only screen and (max-width: 1366px) {
-    .container {
-      margin-top: 12vh;
-      width: 90vw;
-    }
-
-    .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: -3vh;
-    }
-
-    table {
-      width: 40vw;
-      margin-top: 5vh;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 96.8%;
-      font-size: 1.35em;
-    }
-
-    .account {
-      margin-top: 5vh;
-      padding: 5em;
-    }
-
-    .account-wrapper {
-      width: 70%;
-      padding: 0;
-      /* flex-direction: column; */
-      margin: 0 11vw;
-    }
-
-    .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 5vh -10vw;
-    }
-
-    .karen-container .message {
-      text-align: center;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .container {
-      margin-top: 12vh;
-      width: 90vw;
-    }
-
-    .header {
-      /* flex-direction: column; */
-      text-align: center;
-      margin-top: -3vh;
-    }
-
-    table {
-      width: 90%;
-      margin: 2vh 18vw;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 98%;
-    }
-
-    .account {
-      margin-top: -7vh;
-      padding: 5em;
-    }
-
-    .account-wrapper {
-      width: 100%;
-      padding: 0;
-      flex-direction: column;
-      margin: 0 auto;
-    }
-
-    .account-management {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .karen-container {
-      margin: 3vh auto;
-    }
-
-    .karen-container .message {
-      text-align: center;
-    }
-  }
-
-
-
-
-  @media only screen and (max-width: 415px) {
-
-    .karen-container {
-      margin-left: -1em;
-    }
-
-    .account-management {
-      margin-left: -4em;
-    }
-
-    .header {
-      flex-direction: column;
-      text-align: center;
-      padding: 4em;
-    }
-
-    .account {
-      margin: 1vh auto;
-      width: 70%;
-    }
-
-    .account table {
-      margin-left: 35%;
-      width: 90vw;
-    }
-
-    table img {
-      width: 100%;
-    }
-
-    thead {
-      width: 95.5%;
-    }
-
-    .account-wrapper {
-      width: 100%;
-      padding: 0;
-    }
-
-    .account-management {
-      width: 76vw;
-      font-size: .75em;
-    }
-  }
+.container {
+  margin-top: 12vh;
+}
 
 </style>
