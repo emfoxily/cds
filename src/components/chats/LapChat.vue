@@ -35,7 +35,7 @@
 
                         <p>
                             <span class="first-karen">
-                                Can you help me with this? The gift card numbers are XXXXXXXXXXXX and XXXXXXXXXXXX.
+                                Can you help me with this? The gift card numbers are 6191813447618764 and BEV73181759.
                             </span>
                         </p>
                     </li>
